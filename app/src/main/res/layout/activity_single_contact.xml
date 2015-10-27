@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="10dp"
+    android:background="@color/bg_login"
+    >
+  <!-- Name Label -->
+<!--  <TextView android:id="@+id/name_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dip"
+            android:text="one"
+            android:textStyle="bold"
+            android:paddingTop="10dip"
+            android:paddingBottom="10dip"
+            android:textColor="#43bd00"
+      android:layout_above="@+id/email_label"
+      android:layout_alignParentLeft="true" />
+  &lt;!&ndash; Email Label &ndash;&gt;
+  <TextView android:id="@+id/email_label"
+            android:layout_width="fill_parent"
+            android:text="two"
+            android:layout_height="wrap_content"
+            android:textColor="#acacac"
+      android:layout_above="@+id/mobile_label"
+      android:layout_marginBottom="68dp"
+      android:layout_alignParentLeft="true" />
+  &lt;!&ndash; Mobile Label &ndash;&gt;
+  <TextView android:id="@+id/mobile_label"
+      		android:layout_width="fill_parent"
+            android:text="three"
+
+      		android:layout_height="wrap_content"
+      		android:textStyle="bold"
+      android:layout_centerVertical="true"
+      android:layout_alignParentLeft="true"
+      android:layout_marginLeft="43dp" />-->
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:text="Send SMS to donar"
+
+
+        android:onClick="SMStoDonar"
+        android:id="@+id/buttonSMSFromSingleContactActivity"
+        android:layout_above="@+id/buttonCallFromSingleContacActivtivity"
+        android:layout_alignParentLeft="true"
+        android:background="#e6ab1720"
+        android:layout_alignRight="@+id/textViewPhone"
+        android:layout_alignEnd="@+id/textViewPhone"
+        android:textColor="#ffffff" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call to Donar"
+
+        android:onClick="CallToDonar"
+        android:id="@+id/buttonCallFromSingleContacActivtivity"
+        android:layout_alignTop="@+id/buttonSMStoPaient"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/buttonSMStoPaient"
+        android:layout_toStartOf="@+id/buttonSMStoPaient"
+        android:background="#1c11ff"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/textViewName"
+        android:gravity="left"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:textColor="#f6f0ff"
+        android:textSize="40dp"
+        android:background="#abe6ff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:gravity="left"
+        android:layout_marginLeft="20dp"
+
+        android:id="@+id/textViewEmail"
+        android:layout_below="@+id/textViewName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:textColor="#f5faff"
+        android:textSize="30dp"
+        android:background="#abe6ff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:layout_marginLeft="20dp"
+        android:gravity="left"
+        android:id="@+id/textViewPhone"
+        android:layout_below="@+id/textViewEmail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:textColor="#fcfff2"
+        android:textSize="25dp"
+        android:background="#abe6ff" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:text="SMS to Patient"
+
+        android:onClick="smstopatient"
+        android:id="@+id/buttonSMStoPaient"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#1b9102"
+        android:textColor="#FFFFFF" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@android:drawable/checkbox_on_background"
+        android:layout_alignBottom="@+id/textViewPhone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:src="@android:drawable/checkbox_on_background"
+        android:layout_below="@+id/textViewName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/imageView2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView4"
+        android:src="@android:drawable/checkbox_on_background"
+        android:layout_above="@+id/textViewEmail"
+        android:layout_alignTop="@+id/textViewName" />
+
+</RelativeLayout>

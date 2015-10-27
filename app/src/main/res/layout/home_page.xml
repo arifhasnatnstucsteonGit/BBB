@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/bbb_home"
+    android:weightSum="1">
+
+    <Button
+        android:layout_marginRight="100dp"
+        android:padding="10dp"
+        android:paddingBottom="10dp"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Live Blood Bank"
+        android:onClick="liveBBOnClick"
+
+        android:id="@+id/buttonLive"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.56"
+        android:background="#8f0e21"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="193dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="10dp"
+        android:onClick="aboutBBBOnClik"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AboutUs BBB"
+        android:id="@+id/buttonAboutBBB"
+        android:layout_below="@+id/buttonLive"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#b30170bc"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Join with BBB"
+        android:onClick="joinBBBOnClick"
+        android:id="@+id/buttonJoinBBB"
+        android:layout_below="@+id/buttonAboutBBB"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/buttonAboutBBB"
+        android:layout_alignEnd="@+id/buttonAboutBBB"
+        android:background="#387d02"
+        android:textColor="#ffffff" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developers"
+        android:onClick="SearchBloodOnClick"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ffffff"
+        android:background="#a60d27" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discuss On BBB Forum"
+        android:onClick="BBBForumOnClick"
+        android:id="@+id/button2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#a60d27"
+        android:textColor="#ffffff" />
+</RelativeLayout>

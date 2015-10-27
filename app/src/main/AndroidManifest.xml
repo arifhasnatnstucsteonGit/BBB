@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="one.ftflproject.bbb.arifhasnt.com.bbb" >
+
+    <!-- Internet Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".SlashScreen" android:noHistory="true"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- All Product Activity -->
+        <activity
+            android:name=".AllProductsActivity"
+            android:label="All Products" >
+        </activity>
+
+        <!-- Add Product Activity -->
+        <activity
+            android:name=".NewProductActivity" android:noHistory="true"
+            android:label="Add New Product" >
+        </activity>
+
+        <!-- Edit Product Activity -->
+        <activity
+            android:name=".EditProductActivity"
+            android:label="Edit Product" >
+        </activity>
+        <activity android:name=".DisplayDonarList" />
+        <activity android:name=".SingleContactActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SearchDonar"></activity>
+        <activity android:name=".SearchDonarList"></activity>
+        <activity android:name=".SeachResultFromDonarList"></activity>
+        <activity android:name=".SearchDonarTest"></activity>
+        <activity android:name=".HomePage">
+        </activity>
+        <activity android:name=".Hometab"></activity>
+        <activity android:name=".About"></activity>
+        <activity android:name=".JoinToCommunity"></activity>
+        <activity android:name=".CommonBloodBankList"></activity>
+        <activity android:name=".LoginPage" android:noHistory="true"></activity>
+        <activity android:name=".BBBForum"></activity>
+      <!--  <activity android:name=".SearchDonarList"></activity>-->
+
+
+    </application>
+
+</manifest>
